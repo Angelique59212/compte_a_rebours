@@ -24,35 +24,35 @@ class Decompte {
      * year
      */
     getFullYear() {
-        this.div.innerHTML = this.year + "<br>";
+        this.div.innerHTML = "Année " + this.year + "<br>";
     };
 
     /**
      * month
      */
     getMonth() {
-        this.div.innerHTML += this.month + "<br>";
+        this.div.innerHTML += " Mois " +  this.month + "<br>";
     };
 
     /**
      * day
      */
     getDay() {
-        this.div.innerHTML += this.day + "<br>";
+        this.div.innerHTML += "Jour " +  this.day + "<br>";
     };
 
     /**
      *minutes
      */
     getMinutes() {
-        this.div.innerHTML += this.minutes + "<br>";
+        this.div.innerHTML += "Minutes " +  this.minutes + "<br>";
     };
 
     /**
      *seconds
      */
     getSeconds() {
-        this.div.innerHTML += this.seconds + "<br>";
+        this.div.innerHTML += " Seconde " + this.seconds + "<br>";
     };
 
     /**
