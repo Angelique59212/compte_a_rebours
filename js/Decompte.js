@@ -42,18 +42,18 @@ class Decompte {
     };
 
     /**
-     *
+     *minutes
      */
     getMinutes() {
         this.div.innerHTML += this.minutes + "<br>";
-    }
+    };
 
     /**
-     *
+     *seconds
      */
     getSeconds() {
         this.div.innerHTML += this.seconds + "<br>";
-    }
+    };
 
     /**
      * written date
@@ -64,10 +64,10 @@ class Decompte {
         this.getDay();
         this.getMinutes();
         this.getSeconds();
-    }
+    };
 
     /**
-     *
+     *timeout
      */
     timeoutRecursif() {
         let run = setTimeout(() => {
@@ -76,8 +76,11 @@ class Decompte {
            this.timeoutRecursif();
 
         }, 100)
-    }
+    };
 
+    /**
+     * decompte
+     */
     calculateTime() {
         this.seconds -= 1;
         if (this.seconds === -1) {
@@ -94,7 +97,6 @@ class Decompte {
                         this.year--;
                         if (this.year === -1) {
                             this.year = 0;
-
                         }
                     }
                 }
