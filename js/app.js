@@ -1,13 +1,9 @@
-const divMyDate = document.createElement("div");
-const divDayChristmas = document.createElement("div");
-document.body.appendChild(divMyDate);
-document.body.appendChild(divDayChristmas);
+const divDay = document.createElement("div");
+document.body.appendChild(divDay);
 
-const today = new CurrentDate(2021,11,11,12,17);
-const christmasDay = new Christmas(2021,11,25,24,"");
+const decompte= new Decompte(1,0,0,0,0,59, divDay);
 
-divMyDate.innerHTML = today.toString();
-divDayChristmas.innerHTML = christmasDay.toString();
 
-today.getDescription();
-christmasDay.getDescription();
+decompte.timeoutRecursif();
+
+
