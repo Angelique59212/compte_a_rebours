@@ -1,4 +1,12 @@
+/**
+ * create date
+ * @param date
+ * @param buttonStop
+ * @param buttonPlay
+ * @constructor
+ */
 let Account = function (date, buttonStop, buttonPlay) {
+
     this.date = date;
     this.buttonStop = buttonStop;
     this.buttonPlay = buttonPlay;
@@ -8,6 +16,9 @@ let Account = function (date, buttonStop, buttonPlay) {
     this.seconds = 0;
     this.account = 0;
 
+    /**
+     * difference between date
+     */
     this.getAccount = function () {
         this.account = this.date - new Date().getTime();
         this.days = Math.floor(this.account / 60 / 60 / 24 / 1000);
@@ -19,6 +30,9 @@ let Account = function (date, buttonStop, buttonPlay) {
             / 1000);
     }
 
+    /**
+     * create listener and insert text
+     */
     this.dateInterval = function () {
         this.buttonStop.addEventListener("click", ()=> {
             clearInterval(timeout);
