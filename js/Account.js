@@ -1,11 +1,11 @@
-let Account = function (date, buttonStop) {
+let Account = function (date, buttonStop, buttonPlay) {
     this.date = date;
     this.buttonStop = buttonStop;
+    this.buttonPlay = buttonPlay;
     this.days = 0;
     this.hours = 0;
     this.minutes = 0;
     this.seconds = 0;
-    this.timeout = 0;
     this.account = 0;
 
     this.getAccount = function () {
@@ -21,18 +21,17 @@ let Account = function (date, buttonStop) {
 
     this.dateInterval = function () {
         this.buttonStop.addEventListener("click", ()=> {
-            clearInterval(this.timeout);
+            clearInterval(timeout);
         });
-        this.timeout = setInterval(() => {
+        let timeout = setInterval(() => {
             this.getAccount();
             div.innerHTML = "Il reste " + this.days + " jours " + this.hours + " heure " + this.minutes + " min " +
                 this.seconds + " sec";
             this.dateInterval();
         }, 1000);
-
     }
 
-    this.play = function () {
-
-    }
+    this.buttonPlay.addEventListener("click",()=> {
+        this.dateInterval();
+    })
 }
