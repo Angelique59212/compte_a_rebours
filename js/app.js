@@ -1,18 +1,19 @@
 const title = document.createElement("h1");
 const div = document.createElement("div");
+div.id = "account";
 const buttonPlay = document.createElement("button");
 const buttonStop = document.createElement("button");
+const footer = document.createElement("footer");
 
 //id and class for style
 buttonPlay.id = "play";
 buttonStop.id = "stop";
-buttonPlay.className = "center";
-buttonStop.className = "center";
 
 document.body.appendChild(title);
 document.body.appendChild(div);
-document.body.appendChild(buttonPlay);
-document.body.appendChild(buttonStop);
+footer.appendChild(buttonPlay);
+footer.appendChild(buttonStop);
+document.body.appendChild(footer);
 
 /**
  * create date christmas
