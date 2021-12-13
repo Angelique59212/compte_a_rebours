@@ -37,7 +37,7 @@ footer {
 
 @media screen and (max-width: 1010px) {
     body {
-        background-size: unset;
+        background-size: contain;
     }
     .center {
 
