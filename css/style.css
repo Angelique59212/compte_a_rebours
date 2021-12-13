@@ -37,9 +37,6 @@ footer {
 
 @media screen and (max-width: 1010px) {
     body {
-        background-size: contain;
-    }
-    .center {
-
+        background-image: url("../fond-ecran-Noel.jpg");
     }
 }
