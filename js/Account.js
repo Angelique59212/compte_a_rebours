@@ -49,3 +49,4 @@ let Account = function (date, buttonStop, buttonPlay) {
         this.dateInterval();
     })
 }
+

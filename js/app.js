@@ -15,11 +15,12 @@ footer.appendChild(buttonPlay);
 footer.appendChild(buttonStop);
 document.body.appendChild(footer);
 
+
 /**
  * create date christmas
  * @type {number}
  */
-const christmas = new Date(2021,11,24,24,0,0,0).getTime();
+const christmas = new Date(2022,11,24,24,0,0,0).getTime();
 
 buttonPlay.innerHTML= "Play";
 buttonPlay.style.width = "5rem";
@@ -46,16 +47,6 @@ div.style.fontSize = "3rem";
 
 
 let dateChristmas = new Account(christmas, buttonStop, buttonPlay);
-dateChristmas.getAccount();
+// dateChristmas.getAccount();
 dateChristmas.dateInterval();
-
-
-
-
-
-
-
-
-
-
 
